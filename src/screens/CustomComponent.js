@@ -1,12 +1,10 @@
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
-import CustomComponent from "./src/screens/CustomComponent";
 
-const App = () => {
+const CustomComponent = () => {
 	return (
 		<View style={ styles.viewStyle }>
-			<Text style={ styles.textStyle }>Hello World!</Text>
-			<CustomComponent />
+			<Text style={ styles.textStyle }>Custom Component</Text>
 		</View>
 	);
 };
@@ -16,12 +14,14 @@ const styles = StyleSheet.create({
 		display: "flex",
 		justifyContent: "center",
 		alignItems: "center",
-		height: 780,
-		backgroundColor: "black",
+		height: 50,
+        width: 150,
+        margin: 5,
+        backgroundColor: "grey",
 	},
 	textStyle: {
 		color: "white",
 	},
 });
 
-export default App;
+export default CustomComponent;
