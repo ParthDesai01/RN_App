@@ -1,27 +1,19 @@
 import React from "react";
-import { Text, View, StyleSheet } from "react-native";
+import { StyleSheet, ScrollView } from "react-native";
+import Buttons from "./src/screens/ButtonDemo";
 import CustomComponent from "./src/screens/CustomComponent";
+import Images from "./src/screens/Images";
 
 const App = () => {
-	return (
-		<View style={ styles.viewStyle }>
-			<Text style={ styles.textStyle }>Hello World!</Text>
-			<CustomComponent />
-		</View>
-	);
+    return (
+        <ScrollView>
+            <CustomComponent />
+            <Images />
+            <Buttons />
+        </ScrollView>
+    );
 };
 
-const styles = StyleSheet.create({
-	viewStyle: {
-		display: "flex",
-		justifyContent: "center",
-		alignItems: "center",
-		height: 780,
-		backgroundColor: "black",
-	},
-	textStyle: {
-		color: "white",
-	},
-});
+const styles = StyleSheet.create({});
 
 export default App;
